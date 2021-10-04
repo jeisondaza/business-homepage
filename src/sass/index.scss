@@ -1,0 +1,5 @@
+@use 'initial';
+@use './media-querys/mobile.scss';
+@media screen and(min-width:700px) {
+    @import './media-querys/tablet.scss';
+}

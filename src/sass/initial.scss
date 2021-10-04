@@ -1,0 +1,17 @@
+@use 'variables';
+:root{
+    font-size: 62.5%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7rem;
+    // padding: 0.7rem;
+    font-family: variables.$fontFamily;
+    color: variables.$primaryColorTxt;
+    background-color: variables.$background;
+}

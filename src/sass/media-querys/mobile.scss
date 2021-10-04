@@ -1,0 +1,204 @@
+@use '../conts.scss';
+
+//variables for mobile
+$sizeOpt: 1.2rem;
+$sizeHomeTitle: 2.2rem;
+$sizeText: 1.5rem;
+$textImpot: 2rem;
+$paddingComm: 2rem;
+
+//Standar styles
+.text_normal{
+    @include conts.nomalText($sizeText);
+}
+.accent_text{
+    @include conts.textAccent;
+}
+.btn{
+    @include conts.btn;
+}
+.iconBackg{
+    @include conts.iconBackg;
+}
+.plan-desable{
+    @include conts.planDesable;
+}
+//Styles on page
+.nav{
+    @include conts.navBar;
+    padding: 1rem;
+    margin-block-end: 1.5rem;
+    &__logo{
+        @include conts.logo(2.6rem);
+    }
+    &__menu{
+        display: flex;
+        column-gap: 0.7rem;
+    }
+    &__opt{
+        font-size: $sizeOpt;
+    }
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2rem;
+    &__text,
+    &__title,
+    &__form{
+        padding-inline: $paddingComm;
+    }
+    &__title{
+        font-size: $sizeHomeTitle;
+    }
+    &__input{
+        border: none;
+        height: 3rem;
+        width: 20rem;
+        border-radius: 6px;
+    }
+    &__btn{
+        width: 6rem;
+    }
+}
+.srvs{
+    &__title{
+        margin-block-end: 2rem;
+    }
+    &__contnr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2.5rem;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.8rem;
+        padding-inline: $paddingComm;
+    }
+    &__subtlt{
+        font-size: 1.7rem
+    }
+    &__calltA{
+        @include conts.btnBorder;
+        width: 9rem;
+    }
+}
+.fas{
+    font-size: 2.5rem
+}
+.fa{
+    &-pen{
+        @extend .iconBackg;
+        background-color: dodgerblue;
+    }
+    &-code{
+        @extend .iconBackg;
+        background-color: limegreen;
+    }
+    &-server{
+        @extend .iconBackg;
+        background-color: crimson;
+    }
+}
+.works{
+    &__contnr{
+        display: flex;
+        flex-direction: column;
+    }
+    &__exmpl{
+        padding-inline: 0.7rem;
+        margin-block-end: 1.5rem;
+    }
+    &__img{
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        margin-block-end: 0.5rem
+    }
+    &__title{
+        @extend .text_normal;
+        font-weight: bold;
+    }
+    &__more {
+        font-size: 1.7rem;
+        cursor: pointer;
+        text-align: right;
+    }
+}
+.pricing{
+    &__contnr{
+        margin-block-start: 1.5rem;
+        padding-inline: 6rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+    &__card{
+        text-align: center;
+        box-shadow: 0 5px 10px rgba($color: #2bc076, $alpha: 1.0);
+        background-color: rgb(54, 60, 66);
+        border-radius: 10px;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        padding: 2rem 2.7rem;
+    }
+    &__num{
+        @extend .accent_text;
+        font-size: $textImpot;
+        font-weight: bold;
+    }
+    &__btn{
+        @include conts.btn;
+    }
+}
+.clints{
+    &__contnr{
+        display: flex;
+        flex-direction: column;
+        padding-inline: 4rem;
+        row-gap: 3rem;
+    }
+    &__card{
+        box-shadow: 0 3px 10px rgba($color: rgb(0, 0, 0), $alpha: 1.0);
+        padding: 1rem;
+        text-align: center;
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+    &__commt{
+        @extend .text_normal;
+        padding-block-start: 2rem;
+        font-style: italic;
+        text-align: left;
+    }
+}
+.footer{
+    background-color: black;
+    &__contnr{
+        padding: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu{
+        list-style: none;
+    }
+    &__items{
+        margin-block-end: 1rem;
+    }
+    &__icon{
+        display: flex;
+        justify-content: space-between;
+        margin-block-start: 0.5rem;
+    }
+}
+.fab{
+    font-size: $textImpot;
+}

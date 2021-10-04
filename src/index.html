@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/eb401a5998.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
     <title>Home Page</title>
 </head>
 <body>
     <section class="home">
-        <nav class="home__nav">
-            <p class="home__logo">Gamma</p>
-            <div class="home__menu">
-                <p class="home__opt">Home</p>
-                <p class="home__opt">Services</p>
-                <p class="home__opt">Pricing</p>
+        <nav class="nav">
+            <p class="nav__logo">Gamma</p>
+            <div class="nav__menu">
+                <p class="nav__opt">Home</p>
+                <p class="nav__opt">Services</p>
+                <p class="nav__opt">Pricing</p>
             </div>
         </nav>
-        <p class="hom__text tex_super">unhappy whit your website?</p>
-        <h2 class="home__title">We create incredible and fast web services</h2>
+        <div class="home__header">
+            <p class="home__text accent_text">unhappy whit your website?</p>
+            <h2 class="home__title">We create incredible and fast web services</h2>
+        </div>
         <img src="./assets/img/team.jpg" alt="people working" class="home__img">
         <h2 class="home__title">Story, emotion and purpose</h2>
-        <p class="home_text text_normal">We help you transform those ideas into real world applications that will help you achieve your goals in a short time.</p>
+        <p class="home__text text_normal">We help you transform those ideas into real world applications that will help you achieve your goals in a short time.</p>
         <form action="" class="home__form">
-            <label class="home__label">Want us to contact you?</label>
+            <label class="home__label">Want us to contact you?</label><br>
             <input type="text" class="home__input" placeholder="Email">
-            <input type="submit" value="Join">
+            <input type="submit" value="Join" class="home__btn btn">
         </form>
     </section>
     <section class="srvs">
@@ -40,7 +45,7 @@
                 <p class="srvs__descript text_normal">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam magnam vitae autem optio laborum. Quam minus suscipit reiciendis perspiciatis quisquam deserunt? Dignissimos a vitae cumque provident cum dolorem aperiam.
                 </p>
-                <button class="srvs__calltA">Get started</button>
+                <button class="srvs__calltA btn">Get started</button>
             </div>
             <div class="srvs__card">
                 <div class="srvs__icon">
@@ -50,7 +55,7 @@
                 <p class="srvs__descript text_normal">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam magnam vitae autem optio laborum. Quam minus suscipit reiciendis perspiciatis quisquam deserunt? Dignissimos a vitae cumque provident cum dolorem aperiam.
                 </p>
-                <button class="srvs__calltA">Get started</button>
+                <button class="srvs__calltA btn">Get started</button>
             </div>
             <div class="srvs__card">
                 <div class="srvs__icon">
@@ -60,54 +65,54 @@
                 <p class="srvs__descript text_normal">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias numquam magnam vitae autem optio laborum. Quam minus suscipit reiciendis perspiciatis quisquam deserunt? Dignissimos a vitae cumque provident cum dolorem aperiam.
                 </p>
-                <button class="srvs__calltA">Get started</button>
+                <button class="srvs__calltA btn">Get started</button>
             </div>
         </article>
     </section>
     <section class="works">
-        <h2 class="srvs__title home__title"></h2>
+        <h2 class="srvs__title home__title">Good desing means good business</h2>
         <article class="works__contnr">
             <figure class="works__exmpl img_down">
-                <img src="assets/img/dashboard.jpg" alt="dashborad" class="work__img">
+                <img src="assets/img/dashboard.jpg" alt="dashborad" class="works__img">
                 <figcaption>
                     <p class="works__type home__label">Full stack application</p>
-                    <p class="work__title">Dashborad</p>
+                    <p class="works__title">Dashborad</p>
                 </figcaption>
             </figure>
             <figure class="works__exmpl img_up">
-                <img src="assets/img/onboard.jpg" alt="onboard" class="work__img">
+                <img src="assets/img/onboard.jpg" alt="onboard" class="works__img">
                 <figcaption>
                     <p class="works__type home__label">UI/UX desing</p>
-                    <p class="work__title">Onboard application</p>
+                    <p class="works__title">Onboard application</p>
                 </figcaption>
             </figure>
         </article>
         <article class="works__contnr">
             <figure class="works__exmpl img_down">
-                <img src="assets/img/booking.jpg" alt="mobile" class="work__img">
+                <img src="assets/img/booking.jpg" alt="mobile" class="works__img">
                 <figcaption>
                     <p class="works__type home__label">Mobile application</p>
-                    <p class="work__title">Events system</p>
+                    <p class="works__title">Events system</p>
                 </figcaption>
             </figure>
             <figure class="works__exmpl img_up">
-                <img src="assets/img/product.jpg" alt="Frontend " class="work__img">
+                <img src="assets/img/product.jpg" alt="Frontend " class="works__img">
                 <figcaption>
                     <p class="works__type home__label">Front end application</p>
-                    <p class="work__title">Product home page</p>
+                    <p class="works__title">Product home page</p>
                 </figcaption>
             </figure>
         </article>
-        <p class="works__more text_super"></p>
+        <p class="works__more accent_text">see more →</p>
     </section>
     <section class="pricing">
         <div class="pricing__text">
             <h2 class="srvs__title home__title">Find the plan that's right for you</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos veniam iusto numquam magnam, voluptas alias exercitationem at beatae rerum.</p>
+            <p class="home__text text_normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eos veniam iusto numquam magnam, voluptas alias exercitationem at beatae rerum.</p>
         </div>
         <div class="pricing__contnr">
             <div class="pricing__card">
-                <h4 class="pricing__title">Basic</h4>
+                <h4 class="pricing__title">BASIC</h4>
                 <p class="pricing__details plan-enable">1 Service</p>
                 <hr>
                 <p class="pricing__details plan-enable">Gb disk space</p>
@@ -121,21 +126,21 @@
                 <button class="pricing__btn">Get started</button>
             </div>
             <div class="pricing__card">
-                <h4 class="pricing__title">Pro</h4>
-                <p class="pricing__details planenable">5 Services</p>
+                <h4 class="pricing__title">PRO</h4>
+                <p class="pricing__details plan-enable">5 Services</p>
                 <hr>
-                <p class="pricing__details planenable">Gb disk space</p>
+                <p class="pricing__details plan-enable">Gb disk space</p>
                 <hr>
                 <p class="pricing__details planenable">Email support</p>
                 <hr>
-                <p class="pricing__details">24/7 Tech support</p>
+                <p class="pricing__details plan-desable">24/7 Tech support</p>
                 <hr>
                 <p class="pricing__details">Free Upgrades</p>
                 <p class="pricing__num">$50<sup>00</sup></p>
                 <button class="pricing__btn">Get started</button>
             </div>
             <div class="pricing__card">
-                <h4 class="pricing__title">Enterprice</h4>
+                <h4 class="pricing__title">ENTERPRICE</h4>
                 <p class="pricing__details plan-enable">10 Services</p>
                 <hr>
                 <p class="pricing__details plan-enable">Gb disk space</p>
@@ -148,9 +153,6 @@
                 <p class="pricing__num">$150<sup>00</sup></p>
                 <button class="pricing__btn">Get started</button>
             </div>
-        </div>
-        <div class="pricing__offer">
-
         </div>
     </section>
     <section class="clints">
@@ -185,7 +187,7 @@
                 <li class="footer__items normal_text">Pricing</li>
             </ul>
             <div class="footer__icons">
-                <p class="footer__logo home__logo"></p>
+                <p class="footer__logo nav__logo">Gamma</p>
                 <div class="footer__socialM">
                     <div class="footer__icon">
                         <i class="fab fa-instagram-square"></i>

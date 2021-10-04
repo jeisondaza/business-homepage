@@ -1,0 +1,20 @@
+@use '../conts.scss';
+
+//variables for tablet
+$sizeOpt: 1.6rem;
+$sizeHomeTitle: 2.2rem;
+$sizeText: 1.5rem;
+$textImpot: 2rem;
+$paddingComm: 2rem;
+
+.nav{
+    &__logo{
+        @include conts.logo(2.9rem);
+    }
+    &__opt{
+        font-size: $sizeOpt;
+    }
+    &__menu{
+        column-gap: 3rem;
+    }
+}

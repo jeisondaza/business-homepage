@@ -1,0 +1,50 @@
+@use 'variables';
+@mixin nomalText($size) {
+    font-size: $size;
+}
+@mixin logo($size) {
+    font-size: $size;
+    font-weight: 900;
+}
+@mixin navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin textAccent {
+    color: variables.$primaryColor;
+}
+@mixin btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: variables.$secundColor;
+    height: 3rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    &:hover{
+        background-color: variables.$primaryColor; 
+    }
+    &:active{
+        color: variables.$primaryColorTxt;
+        background-color: variables.$thirdColor;
+    }
+}
+@mixin iconBackg {
+    border-radius: 10px;
+    padding: 1rem
+}
+@mixin planDesable {
+    color: dimgrey;
+}
+@mixin btnBorder {
+    @extend .btn;
+    background-color: variables.$background;
+    color: variables.$primaryColorTxt;
+    border: 1px solid variables.$primaryColor;
+    &:hover{
+        color: black;
+        border-color: variables.$secundColor;
+        background-color: variables.$secundColor;
+    }
+}
