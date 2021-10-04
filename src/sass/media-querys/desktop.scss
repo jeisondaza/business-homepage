@@ -1,0 +1,165 @@
+@use '../conts.scss';
+
+//variables for mobile
+$sizeOpt: 2rem;
+$sizeHomeTitle: 3.5rem;
+$labelText: 1.7rem;
+$sizeText: 2rem;
+$textImpot: 2.5rem;
+$paddingComm: 4rem;
+
+body{
+    row-gap: 10rem;
+    margin: 0 auto;
+    max-width: 1367px
+}
+//Standar styles
+.accent_text{
+    @include conts.textAccent;
+    font-size: $labelText
+}
+.text_normal{
+    @include conts.nomalText($sizeText);
+}
+.btn{
+    font-size: $labelText
+}
+.img_down{
+    margin-block-start: 4rem
+}
+
+//Styles on page
+.nav{
+    &__logo{
+        @include conts.logo(5rem);
+    }
+    &__opt{
+        font-size: $sizeOpt;
+        cursor: pointer;
+    }
+}
+.home{
+    &__text,
+    &__title,
+    &__form{
+        padding-inline: $paddingComm;
+    }
+    &__title{
+        font-size: $sizeHomeTitle;
+    }
+    &__display{
+        flex-direction: row;
+        align-items: center;
+        column-gap: 1rem;
+    }
+    &__info{
+    }
+    &__imgCont{
+        padding-inline: 1rem;
+    }
+    &__img{
+        border-radius: 10px;
+        object-fit: cover;
+        width: 90rem;
+        height: 60rem;
+    }
+    &__label{
+        font-size: $labelText;
+    }
+    &__input{
+        width: 50%;
+    }
+    &__btn{
+        width: 7rem;
+    }
+}
+.desktop{
+    padding: 0;
+    width: 100%;
+}
+.srvs{
+    &__contnr{
+        padding-inline: $paddingComm;
+        justify-content: space-between;
+        column-gap: 5rem;
+    }
+    &__card{
+        border-radius: 10px;
+        transition: all 0.4s;
+        padding: 2rem 3rem;
+        row-gap: 2rem;
+        &:hover{
+            box-shadow: 0 3px 10px rgba($color: rgb(0, 0, 0), $alpha: 1.0);
+        }
+    }
+    &__subtlt{
+        font-size: $textImpot;
+    }
+    &__calltA{
+        height: 5rem;
+        width: 12rem;
+    }
+    
+}
+.works{
+    &__contnr{
+        flex-direction: row;
+        justify-content: center;
+    }
+    &__exmpl{
+        margin-block-end: 1.5rem;
+    }
+    &__img{
+        height: 40rem;
+        width: 65rem;
+        object-fit: cover;
+    }
+}
+.pricing{
+    &__contnr{
+        margin-block-start: 4rem;
+        padding-inline: $paddingComm;
+        justify-content: space-evenly;
+    }
+    &__card{
+        font-size: $textImpot;
+        width: 20%;
+        transition: all 0.4s;
+        &:hover{
+            box-shadow: 0 10px 10px 5px rgba($color: #2bc076, $alpha: 1.0);
+            transform: translateY(-1.5rem);
+        }
+    }
+    &__title{
+        margin-block-end: 2rem;
+    }
+    &__num{
+        font-size: $sizeHomeTitle;
+    }
+    &__btn{
+        height: 5rem;
+    }
+}
+.clints{
+    &__contnr{
+        padding-inline: $paddingComm;
+        justify-content: space-around;
+    }
+    &__card{
+        padding: 2rem;
+        width: 30%;
+    }
+    &__img{
+        width: 200px;
+        height: 200px;
+    }
+}
+.footer{
+    &__items{
+        cursor: pointer;
+    }
+}
+.fab{
+    cursor: pointer;
+    font-size: $sizeHomeTitle;
+}

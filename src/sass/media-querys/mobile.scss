@@ -52,6 +52,20 @@ $paddingComm: 2rem;
     &__title{
         font-size: $sizeHomeTitle;
     }
+    &__display{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+    &__img{
+        object-fit: contain;
+        width: 100%;
+    }
     &__input{
         border: none;
         height: 3rem;
@@ -151,9 +165,9 @@ $paddingComm: 2rem;
         @extend .accent_text;
         font-size: $textImpot;
         font-weight: bold;
-    }
-    &__btn{
-        @include conts.btn;
+        & sup{
+            font-weight: 100;
+        }
     }
 }
 .clints{
@@ -164,7 +178,7 @@ $paddingComm: 2rem;
         row-gap: 3rem;
     }
     &__card{
-        box-shadow: 0 3px 10px rgba($color: rgb(0, 0, 0), $alpha: 1.0);
+        // box-shadow: 0 3px 10px rgba($color: rgb(0, 0, 0), $alpha: 1.0);
         padding: 1rem;
         text-align: center;
     }

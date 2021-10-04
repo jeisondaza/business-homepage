@@ -2,14 +2,18 @@
 
 //variables for tablet
 $sizeOpt: 1.6rem;
-$sizeHomeTitle: 2.2rem;
-$sizeText: 1.5rem;
+$sizeHomeTitle: 2.7rem;
+$sizeText: 1.6rem;
 $textImpot: 2rem;
-$paddingComm: 2rem;
+$paddingComm: 3rem;
+
+.text_normal{
+    @include conts.nomalText($sizeText);
+}
 
 .nav{
     &__logo{
-        @include conts.logo(2.9rem);
+        @include conts.logo(3.2rem);
     }
     &__opt{
         font-size: $sizeOpt;
@@ -17,4 +21,58 @@ $paddingComm: 2rem;
     &__menu{
         column-gap: 3rem;
     }
+}
+.home{
+    &__text,
+    &__title,
+    &__form{
+        padding-inline: $paddingComm;
+        width: 40%;
+    }
+    &__title{
+        font-size: $sizeHomeTitle;
+    }
+}
+.srvs{
+    &__contnr{
+        padding-inline: $paddingComm;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 2rem;
+    }
+    &__card{
+        padding: 0;
+    }
+    &__subtlt{
+        font-size: $textImpot;
+    }
+}
+.pricing{
+    &__contnr{
+        margin-block-start: 2.5rem;
+        padding-inline: $paddingComm;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__card{
+        width: 21%;
+    }
+}
+.clints{
+    &__contnr{
+        padding-inline: $paddingComm;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    &__card{
+        width: 30%;
+    }
+}
+.footer{
+    &__menu{
+        font-size: 1.5rem;
+    }
+}
+.fab{
+    font-size: $textImpot;
 }

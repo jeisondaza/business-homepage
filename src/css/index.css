@@ -81,6 +81,20 @@ body {
 .home__title {
   font-size: 2.2rem;
 }
+.home__display {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.home__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.home__img {
+  object-fit: contain;
+  width: 100%;
+}
 .home__input {
   border: none;
   height: 3rem;
@@ -119,6 +133,11 @@ body {
   color: black;
   border-color: #70FFB0;
   background-color: #70FFB0;
+}
+.srvs__calltA:active {
+  border-color: #128043;
+  color: white;
+  background-color: #128043;
 }
 
 .fas {
@@ -180,21 +199,8 @@ body {
   font-size: 2rem;
   font-weight: bold;
 }
-.pricing__btn {
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #70FFB0;
-  height: 3rem;
-  font-weight: bold;
-  transition: all 0.3s;
-}
-.pricing__btn:hover {
-  background-color: #11f577;
-}
-.pricing__btn:active {
-  color: white;
-  background-color: #128043;
+.pricing__num sup {
+  font-weight: 100;
 }
 
 .clints__contnr {
@@ -204,7 +210,6 @@ body {
   row-gap: 3rem;
 }
 .clints__card {
-  box-shadow: 0 3px 10px black;
   padding: 1rem;
   text-align: center;
 }
@@ -244,8 +249,12 @@ body {
 }
 
 @media screen and (min-width: 700px) {
+  .text_normal {
+    font-size: 1.6rem;
+  }
+
   .nav__logo {
-    font-size: 2.9rem;
+    font-size: 3.2rem;
     font-weight: 900;
   }
   .nav__opt {
@@ -253,6 +262,203 @@ body {
   }
   .nav__menu {
     column-gap: 3rem;
+  }
+
+  .home__text, .home__title, .home__form {
+    padding-inline: 3rem;
+    width: 40%;
+  }
+  .home__title {
+    font-size: 2.7rem;
+  }
+
+  .srvs__contnr {
+    padding-inline: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 2rem;
+  }
+  .srvs__card {
+    padding: 0;
+  }
+  .srvs__subtlt {
+    font-size: 2rem;
+  }
+
+  .pricing__contnr {
+    margin-block-start: 2.5rem;
+    padding-inline: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .pricing__card {
+    width: 21%;
+  }
+
+  .clints__contnr {
+    padding-inline: 3rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .clints__card {
+    width: 30%;
+  }
+
+  .footer__menu {
+    font-size: 1.5rem;
+  }
+
+  .fab {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    row-gap: 10rem;
+    margin: 0 auto;
+    max-width: 1367px;
+  }
+
+  .accent_text {
+    color: #11f577;
+    font-size: 1.7rem;
+  }
+
+  .text_normal {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.7rem;
+  }
+
+  .img_down {
+    margin-block-start: 4rem;
+  }
+
+  .nav__logo {
+    font-size: 5rem;
+    font-weight: 900;
+  }
+  .nav__opt {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .home__text, .home__title, .home__form {
+    padding-inline: 4rem;
+  }
+  .home__title {
+    font-size: 3.5rem;
+  }
+  .home__display {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .home__imgCont {
+    padding-inline: 1rem;
+  }
+  .home__img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 90rem;
+    height: 60rem;
+  }
+  .home__label {
+    font-size: 1.7rem;
+  }
+  .home__input {
+    width: 50%;
+  }
+  .home__btn {
+    width: 7rem;
+  }
+
+  .desktop {
+    padding: 0;
+    width: 100%;
+  }
+
+  .srvs__contnr {
+    padding-inline: 4rem;
+    justify-content: space-between;
+    column-gap: 5rem;
+  }
+  .srvs__card {
+    border-radius: 10px;
+    transition: all 0.4s;
+    padding: 2rem 3rem;
+    row-gap: 2rem;
+  }
+  .srvs__card:hover {
+    box-shadow: 0 3px 10px black;
+  }
+  .srvs__subtlt {
+    font-size: 2.5rem;
+  }
+  .srvs__calltA {
+    height: 5rem;
+    width: 12rem;
+  }
+
+  .works__contnr {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .works__exmpl {
+    margin-block-end: 1.5rem;
+  }
+  .works__img {
+    height: 40rem;
+    width: 65rem;
+    object-fit: cover;
+  }
+
+  .pricing__contnr {
+    margin-block-start: 4rem;
+    padding-inline: 4rem;
+    justify-content: space-evenly;
+  }
+  .pricing__card {
+    font-size: 2.5rem;
+    width: 20%;
+    transition: all 0.4s;
+  }
+  .pricing__card:hover {
+    box-shadow: 0 10px 10px 5px #2bc076;
+    transform: translateY(-1.5rem);
+  }
+  .pricing__title {
+    margin-block-end: 2rem;
+  }
+  .pricing__num {
+    font-size: 3.5rem;
+  }
+  .pricing__btn {
+    height: 5rem;
+  }
+
+  .clints__contnr {
+    padding-inline: 4rem;
+    justify-content: space-around;
+  }
+  .clints__card {
+    padding: 2rem;
+    width: 30%;
+  }
+  .clints__img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .footer__items {
+    cursor: pointer;
+  }
+
+  .fab {
+    cursor: pointer;
+    font-size: 3.5rem;
   }
 }
 

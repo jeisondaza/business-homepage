@@ -47,4 +47,9 @@
         border-color: variables.$secundColor;
         background-color: variables.$secundColor;
     }
+    &:active{
+        border-color: variables.$thirdColor;
+        color: variables.$primaryColorTxt;
+        background-color: variables.$thirdColor;
+    }
 }
