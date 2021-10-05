@@ -5,7 +5,6 @@ for (const item of scrolled) {
 
 const observer = new IntersectionObserver(entries => {
     // Loop over the entries
-    console.log(entries);
     entries.forEach(entry => {
       // If the element is visible
       if (entry.isIntersecting) {
