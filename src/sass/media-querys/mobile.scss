@@ -23,6 +23,10 @@ $paddingComm: 2rem;
 .plan-desable{
     @include conts.planDesable;
 }
+.noShow{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
 //Styles on page
 .nav{
     @include conts.navBar;
